@@ -50,10 +50,12 @@ h1 {
 }
 
 #menu > li {
-    margin-bottom: 1em
+    margin-bottom: 1em;
 }
 
-.active {border-bottom: 1px solid #3a3a3a}
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /*navbar styles with dropdown toggle*/
 nav {
@@ -62,30 +64,36 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2PX 2PX #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top: 100%
+    top: 100%;
 }
 
 /*nav toggle button*/
 #nav-toggle:checked~nav {
-    display: block
+    display: block;
 }
 
 #nav-toggle {
-    display: none
+    display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 /*main*/
 main {
-    background-color: lightblue;
     /*make main take up remaining space*/
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/*hero section*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /*footer*/
@@ -120,7 +128,7 @@ main {
     }
 
     .nav-toggle-label {
-        display: none
+        display: none;
     }
 
     #logo {
@@ -135,6 +143,7 @@ main {
     }
 }
 
+/*for larger screens than 792px*/
 @media screen and (min-width:792px) {
     #menu a:hover {
   border-bottom: 1px solid #3a3a3a;
